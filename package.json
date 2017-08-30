@@ -22,8 +22,7 @@
     "node-event-emitter": "0.0.1",
     "q": "1.4.1",
     "r": "0.0.5",
-    "webrtc-adapter": "1.1.0",
-    "diya-sdk": "github:diya-sdk/diya-sdk#2.0.0"
+    "webrtc-adapter": "1.1.0"
   },
   "devDependencies": {
     "babel-preset-es2015": "6.24.1",
