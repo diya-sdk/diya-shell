@@ -1,6 +1,6 @@
 // const DiyaSelector = require('../../DiyaSelector.js').DiyaSelector
-// const DiyaSelector = require('diya-sdk').d1
-const DiyaSelector = d1("#self")
+ const DiyaSelector = require('diya-sdk').d1
+//const DiyaSelector = d1("#self")
 
 
 DiyaSelector.prototype.shell = function (command, args, cols, rows, term, callback) {
