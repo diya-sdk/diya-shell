@@ -5,10 +5,10 @@
   "main": "src/Shell.js",
   "scripts": {
     "clean": "rm -f build/Shell.js && rm -f build/Shell.min.js && rm -f build/temp.js && rm -rf build/build",
-    "build-debug": "browserify src/Shell.js -t [ babelify --presets [ es2015 es2016 ] ] --exclude q --exclude json-socket --exclude bluebird --s d1 --im -d > build/Shell.js",
-    "build-min": "browserify src/Shell.js -t [ babelify --presets [ es2015 es2016 ] ] --exclude q --exclude json-socket --exclude bluebird --s d1 --im | uglifyjs -c > build/Shell.min.js",
+    "build-debug": "browserify src/Shell.js -t [ babelify --presets [ es2015 es2016 ] ] --exclude q --exclude json-socket --exclude bluebird --im -d > build/Shell.js",
+    "build-min": "browserify src/Shell.js -t [ babelify --presets [ es2015 es2016 ] ] --exclude q --exclude json-socket --exclude bluebird --im | uglifyjs -c > build/Shell.min.js",
     "build": "npm run build-debug && npm run build-min",
-    "watch": "watchify src/Shell.js -d --exclude q --im --s d1 -o build/Shell.js -v"
+    "watch": "watchify src/Shell.js -d --exclude q --im -o build/Shell.js -v"
   },
   "author": "Sylvain Mahé <sylv.mahe@gmail.com> (https://github.com/nilpotence)",
   "license": "MIT",
